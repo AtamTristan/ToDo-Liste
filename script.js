@@ -1,22 +1,23 @@
-var button = document.getElementById("enter");
-var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
-var list_items = document.querySelectorAll("li > p");
-var list_buttons = document.querySelectorAll("li > button");
+let button = document.getElementById("enter");
+let input = document.getElementById("userinput");
+let ul = document.querySelector("ul");
+let list_items = document.querySelectorAll("li > p");
+let list_buttons = document.querySelectorAll("li > button");
 
 function inputLength() {
 	return input.value.length;
 }
 
 function createListElement() {
-	var p = document.createElement("p");
-	var button = document.createElement("button");
-	var li = document.createElement("li");
+	let p = document.createElement("p");
+	let button = document.createElement("button");
+	let li = document.createElement("li");
 
 	p.appendChild(document.createTextNode(input.value));
 	p.addEventListener("click", toggleDoneClass);
 
-	button.appendChild(document.createTextNode("x"))
+	button.appendChild(document.createTextNode("x"));
+	button.addEventListener("click", deleteListItem);
 
 	li.appendChild(p);
 	li.appendChild(button)

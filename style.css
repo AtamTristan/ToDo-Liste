@@ -1,3 +1,10 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .coolTitle {
   text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
@@ -24,4 +31,10 @@
 
 li {
   display: flex;
+  justify-content: space-evenly;
+  margin: 25px;
+  border: 2px solid #007bff;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
 }
